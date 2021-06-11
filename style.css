@@ -4,8 +4,17 @@
 }
 
 p {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+ul {
+  padding-left: 65px;
+}
+ol {
+  padding-left: 30px;
+  padding-top: 0px;
+  margin-top: 2px;
 }
 
 h1,
@@ -15,18 +24,22 @@ h4,
 h5,
 h6 {
   font-family: "Mate SC", serif;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+h5 {
+  padding-left: 18px;
+  font-size: 17px;
 }
 body {
   margin: 0;
   font-size: 16px;
-  background-color: #97cddf;
+  background-color: #fffdd0;
 }
 
 /* unvisited link */
 a:link {
-  color: rgb(231, 231, 231);
+  color: rgb(75, 38, 13);
 }
 
 /* visited link */
@@ -44,10 +57,20 @@ a:active {
   color: rgba(0, 255, 85, 0.733);
 }
 
+#mainNav {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
 .mainHeader {
   padding: 50px;
+  padding-bottom: 10px;
   text-align: center;
-  background-color: #2596be;
+  background-color: #f8c19c;
+}
+
+.subHeading {
+  font-size: 18px;
 }
 
 .articleHeader {
@@ -57,18 +80,18 @@ a:active {
 }
 
 .sectionHeader {
-  padding: 8px;
+  padding: 4px;
 }
 .sectionDiv {
   padding: 50px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .contentDiv {
   padding: 50px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 4px;
 }
 
 main {
