@@ -9,12 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Christian M. Lux" />
     <meta name="description" content="This will be my cv soon" />
-
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans:wght@300&family=Oswald&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    
     <title>My CV</title>
   </head>
   <!--
@@ -93,13 +91,31 @@
             </header>
             <section>
               <h5>language</h5>
+              <!--
               <ul>
                 <li><p>german &#9824; &#9824; &#9824; &#9824; &#9824;</p></li>
                 <li><p>english &#9824; &#9824; &#9824;</p></li>
               </ul>
+              -->
+
             </section>
             <section>
-              <h5>it-skills</h5>
+
+              <table id="skillsTable">
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="tdSkills">german</td>
+                  <td class="points">&#9824; &#9824; &#9824; &#9824; &#9824;</td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">english</td>
+                  <td class="points">&#9824; &#9824; &#9824;</td>
+                </tr>
+              </table>
+              <!--
               <ul>
               <li><p>java &#9824; &#9824; &#9824;</p></li>
               <li><p>python &#9824; &#9824;</p></li>
@@ -108,6 +124,44 @@
               <li><p>erp &#9824; &#9824;</p></li>
               <li><p>typespeed &#9824; &#9824; &#9824; &#9824; &#9824;</p></li>
             </ul>
+              -->
+              <h5>it-skills</h5>
+
+              <table id="skillsTable">
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="tdSkills">java</td>
+                  <td class="points">&#9824; &#9824; &#9824;</td>
+                </tr>
+
+                <tr>
+                  <td class="tdSkills">html/css</td>
+                  <td class="points">&#9824; &#9824; &#9824; &#9824;</td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">adobe PS/ID</td>
+                  <td class="points">&#9824; &#9824;</td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">erp</td>
+                  <td class="points">&#9824; &#9824;</td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">sql</td>
+                  <td class="points">&#9824; &#9824; </td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">python</td>
+                  <td class="points">&#9824;</td>
+                </tr>
+                <tr>
+                  <td class="tdSkills">typespeed</td>
+                  <td class="points">&#9824; &#9824; &#9824; &#9824; &#9824;</td>
+                </tr>
+              </table>
             </section>
           </section>
           <section>
@@ -121,7 +175,6 @@
           </ul>
         </div>
       </article>
-
       <article id="contact">
         <header class="articleHeader">
           <h3>Contact</h3>
@@ -132,8 +185,8 @@
               Bauernwaldstraße 136 <br />
               70195 Stuttgart<br />
               <ol>
-              <li><a href="mailto:christian.m.lux@gmail.com">&#9993; christian.m.lux@gmail.com</a></li>
-              <li>&#9990; 01525 / 7507616</li>
+              <li>&#9993; <a href="mailto:christian.m.lux@gmail.com">christian.m.lux@gmail.com</a></li>
+              <li>&#9990;   01525 / 7507616</li>
               </ol>
             </p>
           </address>
