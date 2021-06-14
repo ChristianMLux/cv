@@ -37,6 +37,10 @@ ol {
   padding-top: 0px;
 }
 
+.tdSkills {
+  font-size: 14px;
+}
+
 h1,
 h2,
 h3,
@@ -88,6 +92,10 @@ a {
   padding-bottom: 0px;
 }
 
+#skills {
+  min-height: 450px;
+}
+
 .mainHeader {
   padding: 50px;
   padding-bottom: 10px;
@@ -134,7 +142,18 @@ a {
   padding-left: 40px;
   width: 170px;
 }
-
+.floatBox {
+  float: left;
+  width: 50%;
+  margin-right: 2%;
+  padding: 20px;
+}
+.floatBox:last-child {
+  margin-right: 0;
+}
+.floatBox:first-child {
+  padding-top: 0;
+}
 main {
   max-width: 1024px;
   margin: 0 auto;
