@@ -19,6 +19,7 @@ border
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
 *::selection {
   background-color: #f8c19c;
 }
@@ -53,6 +54,8 @@ h6 {
 }
 h3 {
   font-size: 23px;
+  background-color: #f8c19c;
+  padding-left: 2px;
 }
 h4 {
   font-size: 19px;
@@ -72,24 +75,34 @@ a {
   padding-right: 5px;
 }
 /* MainNav*/
+.mainNav {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.mainNav a {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.mainNav a:first-child {
+  padding-left: 8px;
+}
+.mainNav a:last-child {
+  padding-right: 8px;
+}
 
-#mainNav a:link {
+.mainNav a:link {
   color: rgb(75, 38, 13);
 }
-#mainNav a:visited {
-  color: rgba(155, 62, 0, 0.589);
+.mainNav a:visited {
+  color: rgb(75, 38, 13);
 }
-#mainNav a:hover {
+.mainNav a:hover {
   color: rgb(255, 115, 1);
   background-color: #fffdd0;
 }
-#mainNav a:active {
-  color: rgba(255, 230, 0, 0.979);
+.mainNav a:active {
+  color: #fffdd0;
   background-color: rgb(255, 115, 1);
-}
-#mainNav {
-  padding-top: 20px;
-  padding-bottom: 0px;
 }
 
 #skills {
@@ -98,7 +111,7 @@ a {
 
 .mainHeader {
   padding: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   text-align: center;
   background-color: #f8c19c;
 }
@@ -154,6 +167,7 @@ a {
 .floatBox:first-child {
   padding-top: 0;
 }
+
 main {
   max-width: 1024px;
   margin: 0 auto;
