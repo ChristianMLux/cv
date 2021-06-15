@@ -232,8 +232,10 @@ h5 {
   padding-left: 40px;
   width: 170px;
 }
+
 .floatBox {
-  float: left;
+  /*_float: left;*/
+  display: flex;
   width: 50%;
   margin-right: 2%;
   padding: 20px;
