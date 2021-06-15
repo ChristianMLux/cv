@@ -200,13 +200,16 @@ h5 {
   left: -12px;
 }
 
+.topLink:hover {
+  background-color: #fffdd0;
+}
 .topLink {
   position: absolute;
   right: 50px;
   top: 13.5px;
   padding: 2px;
   border-radius: 1px;
-  background: #fffdd0;
+  _background: #fffdd0;
   color: black;
   font-weight: bold;
 }
