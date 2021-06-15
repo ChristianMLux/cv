@@ -17,11 +17,14 @@ border
 */
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
 *::selection {
   background-color: #f8c19c;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -90,9 +93,6 @@ h3::first-letter {
 :target {
   background-color: #f8c19c;
 }
-:target::selection {
-  background-color: #fffdd0;
-}
 
 h5 {
   padding-left: 18px;
@@ -107,9 +107,11 @@ h5 {
   padding-top: 20px;
   padding-bottom: 0;
 }
+
 .mainNav a {
   padding-left: 16px;
   padding-right: 16px;
+  font-weight: bold;
 }
 .mainNav a:first-child {
   padding-left: 8px;
@@ -133,11 +135,40 @@ h5 {
   background-color: rgb(255, 115, 1);
 }
 
+/*HireMe*/
+.hireMe:hover {
+  background-color: #f8c19c;
+  color: black;
+  border: solid 1px grey;
+  font-weight: bolder;
+}
+.hireMe {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #fffdd0;
+  color: black;
+  font-weight: bold;
+}
+
+/*stickyTest*/
+.stickyNote {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4caf50;
+}
+
 #skills {
-  min-height: 450px;
+  min-height: 400px;
 }
 
 .mainHeader {
+  position: relative;
   padding: 50px;
   padding-bottom: 0;
   text-align: center;
@@ -167,8 +198,26 @@ h5 {
   padding-bottom: 4px;
 }
 
+.articleHeading {
+  position: relative;
+  left: -12px;
+}
+
+.expSubHeading::before {
+  content: " - ";
+}
+.expSubHeading {
+  font-family: "Oswald", serif;
+  font-size: 14px;
+  display: inline-block;
+}
+.expHeading {
+  display: inline-block;
+}
+
 .contentDiv {
-  padding: 50px;
+  padding-left: 30px;
+  padding-right: 50px;
   padding-top: 0px;
   padding-bottom: 4px;
 }
@@ -194,6 +243,12 @@ h5 {
 }
 .floatBox:first-child {
   padding-top: 0;
+}
+
+.floatBox::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 article + article {
