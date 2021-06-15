@@ -24,22 +24,35 @@ border
   background-color: #f8c19c;
 }
 
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: #fffdd0;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 p {
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
+a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 ul {
   padding-left: 65px;
 }
+
 ol {
   margin-top: 2px;
   padding-left: 30px;
   padding-top: 0px;
-}
-
-.tdSkills {
-  font-size: 14px;
 }
 
 h1,
@@ -54,26 +67,41 @@ h6 {
 }
 h3 {
   font-size: 23px;
-  background-color: #f8c19c;
   padding-left: 2px;
+  background-color: #f8c19c;
 }
 h4 {
   font-size: 19px;
 }
+h3::first-letter {
+  color: #fffdd0;
+  padding-left: 14px;
+  padding-right: 2px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+:target h3 {
+  background-color: #fffdd0;
+}
+:target h3::first-letter {
+  color: #f8c19c;
+}
+:target {
+  background-color: #f8c19c;
+}
+:target::selection {
+  background-color: #fffdd0;
+}
+
 h5 {
   padding-left: 18px;
   font-size: 15px;
 }
-body {
-  margin: 0;
-  font-size: 16px;
-  background-color: #fffdd0;
+.tdSkills {
+  font-size: 14px;
 }
 
-a {
-  padding-left: 5px;
-  padding-right: 5px;
-}
 /* MainNav*/
 .mainNav {
   padding-top: 20px;
@@ -168,22 +196,17 @@ a {
   padding-top: 0;
 }
 
-main {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
 article + article {
   border-top: #f8c19c solid;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-#contact {
+.contact {
   margin-bottom: 2rem;
 }
 
-#contact p,
+.contact p,
 ol {
   font-weight: bold;
 }
