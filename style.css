@@ -164,7 +164,7 @@ h5 {
 }
 
 #skills {
-  min-height: 400px;
+  min-height: 0;
 }
 
 .mainHeader {
@@ -236,7 +236,7 @@ h5 {
 .floatBox {
   /*_float: left;*/
   display: flex;
-  width: 50%;
+  width: 100%;
   margin-right: 2%;
   padding: 20px;
 }
@@ -251,6 +251,12 @@ h5 {
   content: "";
   display: block;
   clear: both;
+}
+.softSkills {
+  width: 50%;
+}
+.techSkills {
+  width: 50%;
 }
 
 article + article {
