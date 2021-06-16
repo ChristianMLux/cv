@@ -11,6 +11,7 @@
     <meta name="description" content="This will be my cv soon" />
     <link rel="stylesheet"href="https://unpkg.com/normalize.css@8.0.1/normalize.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans:wght@300&family=Oswald&family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -22,8 +23,10 @@
   <body>
     <main>
       <header class="mainHeader" id="top">
-        <h1>CV of Christian M. Lux</h1>
-        <h2><p class="subHeading">technical assistant software development</p></h2>
+        <div class="headerWrapper">
+          <h1 class="mainHeading">CV of Christian M. Lux</h1>
+          <h2><p class="subHeading">technical assistant software development</p></h2>
+        </div>
         <nav class="mainNav">
           <a href="#profile">Profile</a>
           <a href="#exp">Experiences</a>
@@ -41,21 +44,25 @@
           <h3 class="articleHeading">Profile</h3>
           <a class="topLink" href="#top">&#9650;</a>
         </header>
-        <div class="contentDiv">
-          <p>
-            I'm 30 years old and I'm <i>attending a bootcamp</i> at the moment
-            <br />
-            I had many different jobs in my life but no topic accompanied me
-            longer than IT<br />
-            Besides that, my <strong>adhd</strong> takes care that my life wont
-            get boring at all :D<br />
-          </p>
-          <blockquote>
-            "My mama always said, ‘Life was like a box of chocolates. You never
-            know what you’re gonna get.'” <br />
-            <footer>- Forrest Gump</footer>
-          </blockquote>
-        </div>
+        <section>
+          <div class="sectionDiv">
+            <div class="contentDiv">
+              <p>
+                I'm 30 years old and I'm <i>attending a bootcamp</i> at the moment
+                <br />
+                I had many different jobs in my life but no topic accompanied me
+                longer than IT<br />
+                Besides that, my <strong>adhd</strong> takes care that my life wont
+                get boring at all :D<br />
+              </p>
+              <blockquote>
+                "My mama always said, ‘Life was like a box of chocolates. You never
+                know what you’re gonna get.'” <br />
+                <footer>- Forrest Gump</footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
       </article>
       <!--
         Experience
@@ -68,8 +75,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Cryptotrading</h4>
-              <p class="expSubHeading">2018-2020 (Self-employed)</p>
+              <h4 class="sectionHeading">Cryptotrading</h4>
+              <p class="sectionSubHeading">2018-2020 (Self-employed)</p>
             </header>
             <div class="contentDiv">
               <p>Waidmanns Heil! Das nichtsnutzig Gaudi. Das garstig Autobahn.</p>
@@ -79,8 +86,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Restaurantservice</h4>
-              <p class="expSubHeading">2016-2017 (Sushi Circle Gastronomie GmbH)</p>
+              <h4 class="sectionHeading">Restaurantservice</h4>
+              <p class="sectionSubHeading">2016-2017 (Sushi Circle Gastronomie GmbH)</p>
             </header>
             <div class="contentDiv">
               <p>Firlefanz und Lump gutheißen bräsig Schnösel. Die Fressalien bauchpinseln die töricht Wichtigtuerei.</p>
@@ -90,8 +97,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Worker in qualitycontrol</h4>
-              <p class="expSubHeading">2012-2013 (Koch, Neff & Volckmar GmbH)</p>
+              <h4 class="sectionHeading">Worker in qualitycontrol</h4>
+              <p class="sectionSubHeading">2012-2013 (Koch, Neff & Volckmar GmbH)</p>
             </header>
             <div class="contentDiv">
               <p>checking retour items for damage or other errors</p>
@@ -101,19 +108,19 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Post delivery</h4>
-              <p class="expSubHeading">2018-2020 (Self-employed)</p>
+              <h4 class="sectionHeading">Post delivery</h4>
+              <p class="sectionSubHeading">2010-2011 (DPD Dynamic Parcel Distribution GmbH&Co.KG)</p>
             </header>
             <div class="contentDiv">
-              <p>2010-2011 (DPD Dynamic Parcel Distribution GmbH&Co.KG)</p>
+              <p>loading the trucks and delivering the packages</p>
             </div>
           </div>
         </section>
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Basic Military Service</h4>
-              <p class="expSubHeading">2010-2010 (Bundeswehr Germany)</p>
+              <h4 class="sectionHeading">Basic Military Service</h4>
+              <p class="sectionSubHeading">2010-2010 (Bundeswehr Germany)</p>
             </header>
             <div class="contentDiv">
               <p>9 months at the Gebirgslogistikbattalion 8, Füssen</p>
@@ -123,8 +130,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4 class="expHeading">Servicetechnician</h4>
-              <p class="expSubHeading">2008-2010 (SAFETEC - IT Systeme)</p>
+              <h4 class="sectionHeading">Servicetechnician</h4>
+              <p class="sectionSubHeading">2008-2010 (SAFETEC - IT Systeme)</p>
             </header>
             <div class="contentDiv">
               <p>Technician for Scanners and Printers. tarted the MCSE certifcate</p>
@@ -145,7 +152,7 @@
             <div class="floatBox">
               <div class="techSkills">
                 <header class="sectionHeader">
-                  <h4>Technical Skills</h4>
+                  <h4 class="sectionHeading">Technical Skills</h4>
                 </header>
                 <h5>language</h5>
                 <table id="skillsTable">
@@ -200,7 +207,7 @@
               </div>
               <div class="softSkills">
                 <header class="sectionHeader">
-                  <h4>Soft Skills</h4>
+                  <h4 class="sectionHeading">Soft Skills</h4>
                 </header>
                 <table id="skillsTable">
                   <tr>
@@ -248,8 +255,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4>University entrance qualification and technical assistant software development</h4>
-              <p>2015-2017 (it.schule Stuttgart)</p>
+              <h4 class="sectionHeading">University entrance qualification and technical assistant software development</h4>
+              <p class="sectionSubHeading">2015-2017 (it.schule Stuttgart)</p>
             </header>
             <div class="contentDiv">
               <p>education to a technical assitant focus software dev. wrote a thesis about procedural generated 3d environments</p>
@@ -259,8 +266,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4>Vocational school: business administration</h4>
-              <p>2013-2015 (Private Berufsfachschulen des int. Bundes e.V.)</p>
+              <h4 class="sectionHeading">Vocational school: business administration</h4>
+              <p class="sectionSubHeading">2013-2015 (Private Berufsfachschulen des int. Bundes e.V.)</p>
             </header>
             <div class="contentDiv">
               <p>business administration education</p>
@@ -270,8 +277,8 @@
         <section>
           <div class="sectionDiv">
             <header class="sectionHeader">
-              <h4>Secondary School</h4>
-              <p>1996-2007 (FES & LUS - Stuttgart)</p>
+              <h4 class="sectionHeading">Secondary School</h4>
+              <p class="sectionSubHeading">1996-2007 (FES & LUS - Stuttgart)</p>
             </header>
             <div class="contentDiv">
               <p>school education</p>
@@ -296,7 +303,7 @@
                   70195 Stuttgart<br />
                   <ol>
                     <li>&#9993; <a href="mailto:christian.m.lux@gmail.com">christian.m.lux@gmail.com</a></li>
-                    <li>&#9990;   01525 / 7507616</li>
+                    <li class="twitter"><a href="https://twitter.com/Whistlemaker1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Whistlemaker1</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
                   </ol>
                 </p>
               </address>
