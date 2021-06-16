@@ -25,37 +25,37 @@ border
 
 html {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 body {
   margin: 0;
-  font-size: 16px;
   background-color: #fffdd0;
 }
 
 main {
-  max-width: 1024px;
+  max-width: 100ch;
   margin: 0 auto;
 }
 
 p {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 a {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.313rem;
+  padding-right: 0.313rem;
 }
 
 ul {
-  padding-left: 65px;
+  padding-left: 4.063rem;
 }
 
 ol {
-  margin-top: 2px;
-  padding-left: 30px;
-  padding-top: 0px;
+  padding-left: 0rem;
+  margin-top: 0.125rem;
+  padding-top: 0rem;
 }
 
 h1,
@@ -65,25 +65,42 @@ h4,
 h5,
 h6 {
   font-family: "Oswald", serif;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 h3 {
-  font-size: 23px;
-  padding-left: 2px;
+  font-size: 1.438rem;
+  padding-left: 0.125rem;
   background-color: #f8c19c;
 }
 h4 {
-  font-size: 19px;
+  font-size: 1.3rem;
 }
 h3::first-letter {
   color: #fffdd0;
-  padding-left: 14px;
-  padding-right: 2px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  padding-left: 0.875rem;
+  padding-right: 0.125rem;
+  text-shadow: -0.063rem -0.063rem 0 #000, 0.063rem -0.063rem 0 #000,
+    -0.063rem 0.063rem 0 #000, 0.063rem 0.063rem 0 #000;
+}
+h5 {
+  padding-left: 1.125rem;
+  font-size: 1.125rem;
 }
 
+/*
+===POINTS===
+*/
+.fa {
+  color: grey;
+}
+.checked {
+  color: orange;
+}
+
+/*
+Current Content Highlighter
+*/
 :target h3 {
   background-color: #fffdd0;
 }
@@ -94,32 +111,62 @@ h3::first-letter {
   background-color: #f8c19c;
 }
 
-h5 {
-  padding-left: 18px;
-  font-size: 15px;
+/*
+MAIN ELEMENTS
+*/
+.mainHeader {
+  position: relative;
+  padding: 3.125rem;
+  padding-bottom: 0;
+  text-align: center;
+  background-color: #f8c19c;
 }
-.tdSkills {
-  font-size: 14px;
+.headerWrapper {
+  font-size: 3rem;
 }
-
+.mainHeading {
+  font-size: 1em;
+}
+.subHeading {
+  font-size: 0.25em;
+}
+.subHeading::after {
+  content: "1️⃣3️⃣3️⃣7️⃣";
+  padding-left: 0.188rem;
+}
+/*HireMe*/
+.hireMe:hover {
+  background-color: #f8c19c;
+  color: black;
+  border: solid 0.063rem grey;
+  font-weight: bolder;
+}
+.hireMe {
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #fffdd0;
+  color: black;
+  font-weight: bold;
+}
 /* MainNav*/
 .mainNav {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   padding-bottom: 0;
 }
-
 .mainNav a {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: bold;
 }
 .mainNav a:first-child {
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .mainNav a:last-child {
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
-
 .mainNav a:link {
   color: rgb(75, 38, 13);
 }
@@ -135,121 +182,92 @@ h5 {
   background-color: rgb(255, 115, 1);
 }
 
-/*HireMe*/
-.hireMe:hover {
-  background-color: #f8c19c;
-  color: black;
-  border: solid 1px grey;
-  font-weight: bolder;
+/*ARTICLE*/
+/*Lines between*/
+article + article {
+  border-top: #f8c19c solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.hireMe {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 8px;
-  border-radius: 4px;
-  background: #fffdd0;
-  color: black;
-  font-weight: bold;
-}
-
-/*stickyTest*/
-.stickyNote {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4caf50;
-}
-
-.mainHeader {
-  position: relative;
-  padding: 50px;
-  padding-bottom: 0;
-  text-align: center;
-  background-color: #f8c19c;
-}
-
-.subHeading {
-  font-size: 18px;
-}
-.subHeading::after {
-  content: "1️⃣3️⃣3️⃣7️⃣";
-  padding-left: 3px;
-}
-
 .articleHeader {
   position: relative;
-  padding: 35px;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 2.188rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.articleHeading {
+  font-size: 1.5rem;
+  position: relative;
+  left: -0.75rem;
 }
 
+/*SECTION*/
 .sectionHeader {
-  padding: 4px;
+  padding: 0.25rem;
 }
 .sectionDiv {
-  padding: 50px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 3.125rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.sectionHeading {
+  font-size: 1.3rem;
+  display: inline-block;
+}
+.sectionSubHeading {
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  display: inline-block;
+}
+.sectionSubHeading::before {
+  content: " - ";
 }
 
-.articleHeading {
-  position: relative;
-  left: -12px;
+/*CONTENT*/
+.contentDiv {
+  padding-left: 1rem;
+  padding-right: 3.125rem;
+  padding-top: 0rem;
+  padding-bottom: 0.25rem;
 }
-
-.topLink:hover {
-  background-color: #fffdd0;
-}
-.topLink {
-  position: absolute;
-  right: 50px;
-  top: 13.5px;
-  padding: 2px;
-  border-radius: 1px;
-  _background: #fffdd0;
-  color: black;
-  font-weight: bold;
-}
-
 .expSubHeading::before {
   content: " - ";
 }
 .expSubHeading {
   font-family: "Oswald", serif;
-  font-size: 14px;
+  font-size: 1rem;
   display: inline-block;
 }
 .expHeading {
+  font-size: 1.3rem;
   display: inline-block;
 }
-
-.contentDiv {
-  padding-left: 30px;
-  padding-right: 50px;
-  padding-top: 0px;
-  padding-bottom: 4px;
+.contact {
+  margin-bottom: 2rem;
+}
+.contact p,
+ol {
+  font-weight: bold;
+  list-style-type: none;
 }
 
+/*Old Skilltable @wll be fixed soon*/
 .points {
-  padding-left: 20px;
-  width: 80.5px;
+  padding-left: 1.25rem;
+  width: 6rem;
 }
-
 .tdSkills {
-  padding-right: 20px;
-  padding-left: 40px;
-  width: 170px;
+  font-size: 1rem;
+  padding-right: 1.25rem;
+  padding-left: 2.5rem;
+  width: 10rem;
 }
-
 .floatBox {
   /*_float: left;*/
   display: flex;
   width: 100%;
   margin-right: 2%;
-  padding: 20px;
+  padding: 0rem;
 }
 .floatBox:last-child {
   margin-right: 0;
@@ -257,7 +275,6 @@ h5 {
 .floatBox:first-child {
   padding-top: 0;
 }
-
 .floatBox::after {
   content: "";
   display: block;
@@ -270,17 +287,35 @@ h5 {
   width: 50%;
 }
 
-article + article {
-  border-top: #f8c19c solid;
-  padding-top: 8px;
-  padding-bottom: 8px;
+/* = BETA AREA = */
+
+/*TWITTERBUTTON*/
+.twitter {
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
 }
 
-.contact {
-  margin-bottom: 2rem;
+/*stickyTest*/
+.stickyNote {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0.313rem;
+  background-color: #cae8ca;
+  border: 0.125rem solid #4caf50;
 }
 
-.contact p,
-ol {
+/*TO THE TOP-BUTTON FAKE*/
+.topLink:hover {
+  background-color: #fffdd0;
+}
+.topLink {
+  position: absolute;
+  right: 3.125rem;
+  top: 0.8125rem;
+  padding: 0.125rem;
+  border-radius: 0.0625rem;
+  _background: #fffdd0;
+  color: black;
   font-weight: bold;
 }
