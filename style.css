@@ -172,7 +172,7 @@ MAIN ELEMENTS
   font-weight: bolder;
 }
 .hireMe {
-  position: fixed;
+  position: absolute;
   right: 1.25rem;
   top: 1.25rem;
   padding: 0.5rem;
