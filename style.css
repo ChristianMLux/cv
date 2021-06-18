@@ -249,9 +249,14 @@ article + article {
   padding: 0.25rem;
 }
 .sectionDiv {
+  background-color: rgb(255, 253, 208);
   padding: 3.125rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 .sectionHeading {
   font-size: 1.3rem;
@@ -331,6 +336,19 @@ ol {
 }
 
 /* = BETA AREA = */
+
+/*SectionHighlighting*/
+
+.articleExp .sectionDiv:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 253, 208, 1) 0%,
+    rgba(248, 193, 156, 0.6362920168067228) 50%,
+    rgba(255, 253, 208, 1) 100%
+  );
+  padding-left: 4rem;
+  cursor: pointer;
+}
 
 /*TWITTERBUTTON*/
 .twitter {
