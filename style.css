@@ -34,7 +34,7 @@ body {
 }
 
 main {
-  max-width: 100ch;
+  max-width: 80ch;
   margin: 0 auto;
 }
 
@@ -230,7 +230,7 @@ MAIN ELEMENTS
 article + article {
   border-top: #f8c19c solid;
   padding-top: 0;
-  padding-bottom: 0.5rem;
+  _padding-bottom: 0.5rem;
 }
 .articleHeader {
   position: relative;
@@ -342,10 +342,14 @@ ol {
 /*SectionHighlighting*/
 
 .articleExp .sectionDiv:hover {
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
   background-image: linear-gradient(
     90deg,
     rgba(255, 253, 208, 1) 0%,
-    rgba(248, 193, 156, 0.8211659663865546) 0%,
+    rgba(248, 193, 156, 1) 0%,
     rgba(255, 253, 208, 1) 100%
   );
   padding-left: 4rem;
