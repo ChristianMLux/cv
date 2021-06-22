@@ -26,6 +26,8 @@ border
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  margin: 0 auto;
+  max-width: 80ch;
 }
 
 body {
@@ -34,8 +36,8 @@ body {
 }
 
 main {
-  max-width: 80ch;
   margin: 0 auto;
+  max-width: 80ch;
 }
 
 /*
@@ -147,7 +149,14 @@ MAIN ELEMENTS
   padding: 3.125rem;
   padding-bottom: 0;
   text-align: center;
-  background-color: #f8c19c;
+  _background-color: #f8c19c;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 253, 208, 1) 0%,
+    rgba(248, 193, 156, 1) 0%,
+    rgba(255, 253, 208, 1) 0%,
+    rgba(248, 193, 156, 1) 65%
+  );
 }
 .headerWrapper {
   font-size: 3rem;
@@ -340,6 +349,18 @@ ol {
 }
 .techSkills {
   width: 50%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8c19c;
+  margin: 0;
+  padding: 1.5rem;
+}
+.footer-text {
+  font-weight: 700;
 }
 
 /* = BETA AREA = */
