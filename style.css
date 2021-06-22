@@ -39,6 +39,7 @@ body {
   --background-color: #fffdd0;
   --heading-bg-color: #f8c19c;
   --basic-font-color: black;
+  --target-color: #f8c19c;
   margin: 0;
   background-color: var(--background-color);
   color: var(--basic-font-color);
@@ -141,7 +142,7 @@ h5 {
 Current Content Highlighter
 */
 :target h3 {
-  background-color: var(--primary-color);
+  background-color: var(--heading-bg-color);
 }
 :target h3::first-letter {
   color: var(--primary-var-color);
@@ -453,21 +454,6 @@ ol {
     --background-color: #121212;
     --heading-bg-color: #12121260;
     --basic-font-color: white;
-  }
-  :target h3 {
-    background-color: var(--heading-bg-color);
-  }
-  :target h3::first-letter {
-    color: var(--primary-var-color);
-  }
-  :target {
-    color: var(--basic-font-color);
-    _background-color: var(--primary-color);
-    background-image: linear-gradient(
-      90deg,
-      var(--primary-color) 0%,
-      var(--third-color) 0%,
-      var(--primary-color) 100%
-    );
+    --target-color: #7a3608;
   }
 }
