@@ -225,6 +225,7 @@ MAIN ELEMENTS
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 .mainNav a:first-child {
   padding-left: 0.5rem;
@@ -454,6 +455,6 @@ ol {
     --background-color: #121212;
     --heading-bg-color: #12121260;
     --basic-font-color: white;
-    --target-color: #230f02;
+    --target-color: #451f05;
   }
 }
