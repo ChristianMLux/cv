@@ -28,11 +28,14 @@ html {
   font-size: 16px;
   margin: 0 auto;
   max-width: 80ch;
+  --main-color: #f8c19c;
+  --sub-color: #fffdd0;
+  --hightlight-color: hotpink;
 }
 
 body {
   margin: 0;
-  background-color: #fffdd0;
+  background-color: var(--sub-color);
 }
 
 main {
@@ -101,13 +104,13 @@ h6 {
 h3 {
   font-size: 1.438rem;
   padding-left: 0.125rem;
-  background-color: #f8c19c;
+  background-color: var(--main-color);
 }
 h4 {
   font-size: 1.3rem;
 }
 h3::first-letter {
-  color: #fffdd0;
+  color: var(--sub-color);
   padding-left: 0.875rem;
   padding-right: 0.125rem;
   text-shadow: -0.063rem -0.063rem 0 #000, 0.063rem -0.063rem 0 #000,
@@ -132,13 +135,13 @@ h5 {
 Current Content Highlighter
 */
 :target h3 {
-  background-color: #fffdd0;
+  background-color: var(--sub-color);
 }
 :target h3::first-letter {
-  color: #f8c19c;
+  color: var(--main-color);
 }
 :target {
-  background-color: #f7af7f;
+  background-color: var(--main-color);
 }
 
 /*
@@ -149,7 +152,7 @@ MAIN ELEMENTS
   padding: 3.125rem;
   padding-bottom: 0;
   text-align: center;
-  _background-color: #f8c19c;
+  _background-color: var(--main-color);
   background: linear-gradient(
     0deg,
     rgba(255, 253, 208, 1) 0%,
@@ -175,7 +178,7 @@ MAIN ELEMENTS
 /*HireMe*/
 
 .hireMe:hover {
-  background-color: #f8c19c;
+  background-color: var(--main-color);
   color: black;
   border: solid 0.063rem grey;
   font-weight: bolder;
@@ -186,7 +189,7 @@ MAIN ELEMENTS
   top: 1.25rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background: #fffdd0;
+  background: var(--sub-color);
   color: black;
   font-weight: bold;
 }
@@ -197,7 +200,7 @@ MAIN ELEMENTS
     top: 1.25rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background: #fffdd0;
+    background: var(--sub-color);
     color: black;
     font-weight: bold;
   }
@@ -230,17 +233,17 @@ MAIN ELEMENTS
 }
 .mainNav a:hover {
   color: rgb(255, 115, 1);
-  background-color: #fffdd0;
+  background-color: var(--sub-color);
 }
 .mainNav a:active {
-  color: #fffdd0;
+  color: var(--sub-color);
   background-color: rgb(255, 115, 1);
 }
 
 /*ARTICLE*/
 /*Lines between*/
 article + article {
-  border-top: #f8c19c solid;
+  border-top: var(--main-color) solid;
   padding-top: 0;
   _padding-bottom: 0.5rem;
 }
@@ -355,7 +358,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8c19c;
+  background-color: var(--main-color);
   margin: 0;
   padding: 1.5rem;
 }
@@ -400,7 +403,7 @@ ol {
 
 /*TO THE TOP-BUTTON FAKE*/
 .topLink:hover {
-  background-color: #fffdd0;
+  background-color: var(--sub-color);
 }
 .topLink {
   position: absolute;
@@ -408,7 +411,7 @@ ol {
   top: 0.8125rem;
   padding: 0.125rem;
   border-radius: 0.0625rem;
-  _background: #fffdd0;
+  _background: var(--sub-color);
   color: black;
   font-weight: bold;
 }
