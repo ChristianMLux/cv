@@ -148,7 +148,7 @@ Current Content Highlighter
   color: var(--primary-var-color);
 }
 :target {
-  background-color: var(--primary-color);
+  background-color: var(--target-color);
 }
 
 /*
