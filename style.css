@@ -50,34 +50,6 @@ main {
   max-width: 80ch;
 }
 
-/*
-@media
-*/
-@media screen and (min-width: 375px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 992px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@media print {
-  .hire-me {
-    display: none;
-  }
-  .mainNav {
-    display: none;
-  }
-}
-
 p {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -225,7 +197,6 @@ MAIN ELEMENTS
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
-  font-size: 1rem;
 }
 .mainNav a:first-child {
   padding-left: 0.5rem;
@@ -429,7 +400,41 @@ ol {
   font-weight: bold;
 }
 
+/*
+@media
+*/
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+  .mainNav a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+  .mainNav {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 769px) {
+  .mainNav a {
+    font-size: 16px;
+  }
   .mainNav {
     flex-direction: row;
   }
