@@ -32,16 +32,19 @@ html {
 
 body {
   --primary-color: #f8c19c;
-  --primary-var-color: #ef6c14;
+  --primary-var-color: #ec8a49;
   --secondary-color: #247ba0;
   --error-color: #cf6679;
   --background-color: #fffdd0;
+  --heading-bg-color: #f8c19c;
+  --basic-font-color: black;
 
   --main-color: #f8c19c;
   --sub-color: #fffdd0;
   --hightlight-color: hotpink;
   margin: 0;
   background-color: var(--background-color);
+  color: var(--basic-font-color);
 }
 
 main {
@@ -110,13 +113,13 @@ h6 {
 h3 {
   font-size: 1.438rem;
   padding-left: 0.125rem;
-  background-color: var(--background-color);
+  background-color: var(--heading-bg-color);
 }
 h4 {
   font-size: 1.3rem;
 }
 h3::first-letter {
-  color: var(--secondary-color);
+  color: var(--primary-var-color);
   padding-left: 0.875rem;
   padding-right: 0.125rem;
   text-shadow: -0.063rem -0.063rem 0 #000, 0.063rem -0.063rem 0 #000,
@@ -158,7 +161,7 @@ MAIN ELEMENTS
   padding: 3.125rem;
   padding-bottom: 0;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--heading-bg-color);
   _background: linear-gradient(
     0deg,
     rgba(255, 253, 208, 1) 0%,
@@ -195,7 +198,7 @@ MAIN ELEMENTS
   top: 1.25rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background: var(--secondary-color);
+  background: var(--primary-var-color);
   color: black;
   font-weight: bold;
 }
@@ -206,8 +209,8 @@ MAIN ELEMENTS
     top: 1.25rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background: var(--secondary-color);
-    color: black;
+    background: var(--primary-var-color);
+    color: var(--basic-font-color);
     font-weight: bold;
   }
 }
@@ -238,8 +241,7 @@ MAIN ELEMENTS
   color: rgb(75, 38, 13);
 }
 .mainNav a:hover {
-  color: rgb(255, 115, 1);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-var-color);
 }
 .mainNav a:active {
   color: var(--secondery-color);
@@ -364,7 +366,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--heading-bg-color);
   margin: 0;
   padding: 1.5rem;
 }
@@ -409,7 +411,7 @@ ol {
 
 /*TO THE TOP-BUTTON FAKE*/
 .topLink:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-var-color);
 }
 .topLink {
   position: absolute;
@@ -418,7 +420,7 @@ ol {
   padding: 0.125rem;
   border-radius: 0.0625rem;
   _background: var(--secondery-color);
-  color: black;
+  color: var(--basic-font-color);
   font-weight: bold;
 }
 
@@ -445,5 +447,7 @@ ol {
     --secondary-color: #247ba0;
     --error-color: #cf6679;
     --background-color: #121212;
+    --heading-bg--color: #121212b6;
+    --basic-font-color: white;
   }
 }
