@@ -196,6 +196,9 @@ MAIN ELEMENTS
 
 /* MainNav*/
 .mainNav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 1.25rem;
   padding-bottom: 0;
 }
@@ -247,6 +250,8 @@ article + article {
 
 /*SECTION*/
 .sectionHeader {
+  display: flex;
+  flex-direction: column;
   padding: 0.25rem;
 }
 
@@ -385,4 +390,19 @@ ol {
   _background: #fffdd0;
   color: black;
   font-weight: bold;
+}
+
+@media screen and (min-width: 769px) {
+  .mainNav {
+    flex-direction: row;
+  }
+  .sectionHeader {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .sectionSubHeading {
+    margin-top: 0.55rem;
+    margin-left: 0.25rem;
+  }
 }
