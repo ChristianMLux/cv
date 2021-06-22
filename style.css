@@ -388,9 +388,9 @@ ol {
   );
   background-image: linear-gradient(
     90deg,
-    var(--third-color) 0%,
     var(--primary-color) 0%,
-    var(--third-color) 100%
+    var(--third-color) 0%,
+    var(--primary-color) 100%
   );
   padding-left: 4rem;
   _cursor: pointer;
@@ -453,5 +453,21 @@ ol {
     --background-color: #121212;
     --heading-bg-color: #12121260;
     --basic-font-color: white;
+  }
+  :target h3 {
+    background-color: var(--heading-bg-color);
+  }
+  :target h3::first-letter {
+    color: var(--primary-var-color);
+  }
+  :target {
+    color: var(--basic-font-color);
+    _background-color: var(--primary-color);
+    background-image: linear-gradient(
+      90deg,
+      var(--primary-color) 0%,
+      var(--third-color) 0%,
+      var(--primary-color) 100%
+    );
   }
 }
