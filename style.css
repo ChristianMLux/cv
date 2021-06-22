@@ -34,6 +34,7 @@ body {
   --primary-color: #f8c19c;
   --primary-var-color: #ec8a49;
   --secondary-color: #247ba0;
+  --third-color: #fffdd0;
   --error-color: #cf6679;
   --background-color: #fffdd0;
   --heading-bg-color: #f8c19c;
@@ -379,11 +380,17 @@ ol {
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-  background-image: linear-gradient(
+  _background-image: linear-gradient(
     90deg,
     rgba(255, 253, 208, 1) 0%,
     rgba(248, 193, 156, 1) 0%,
     rgba(255, 253, 208, 1) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    var(--third-color) 0%,
+    var(--primary-color) 0%,
+    var(--third-color) 100%
   );
   padding-left: 4rem;
   _cursor: pointer;
@@ -441,6 +448,7 @@ ol {
     --primary-color: #f8c19c;
     --primary-var-color: #ef6c14;
     --secondary-color: #247ba0;
+    --third-color: #121212;
     --error-color: #cf6679;
     --background-color: #121212;
     --heading-bg-color: #12121260;
