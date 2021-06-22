@@ -31,11 +31,17 @@ html {
 }
 
 body {
+  --primary-color: #f8c19c;
+  --primary-var-color: #ef6c14;
+  --secondary-color: #247ba0;
+  --error-color: #cf6679;
+  --background-color: #fffdd0;
+
   --main-color: #f8c19c;
   --sub-color: #fffdd0;
   --hightlight-color: hotpink;
   margin: 0;
-  background-color: var(--sub-color);
+  background-color: var(--background-color);
 }
 
 main {
@@ -104,13 +110,13 @@ h6 {
 h3 {
   font-size: 1.438rem;
   padding-left: 0.125rem;
-  background-color: var(--main-color);
+  background-color: var(--background-color);
 }
 h4 {
   font-size: 1.3rem;
 }
 h3::first-letter {
-  color: var(--sub-color);
+  color: var(--secondary-color);
   padding-left: 0.875rem;
   padding-right: 0.125rem;
   text-shadow: -0.063rem -0.063rem 0 #000, 0.063rem -0.063rem 0 #000,
@@ -135,13 +141,13 @@ h5 {
 Current Content Highlighter
 */
 :target h3 {
-  background-color: var(--sub-color);
+  background-color: var(--primary-color);
 }
 :target h3::first-letter {
-  color: var(--main-color);
+  color: var(--primary-var-color);
 }
 :target {
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
 }
 
 /*
@@ -152,8 +158,8 @@ MAIN ELEMENTS
   padding: 3.125rem;
   padding-bottom: 0;
   text-align: center;
-  _background-color: var(--main-color);
-  background: linear-gradient(
+  background-color: var(--primary-color);
+  _background: linear-gradient(
     0deg,
     rgba(255, 253, 208, 1) 0%,
     rgba(248, 193, 156, 1) 0%,
@@ -178,7 +184,7 @@ MAIN ELEMENTS
 /*HireMe*/
 
 .hireMe:hover {
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
   color: black;
   border: solid 0.063rem grey;
   font-weight: bolder;
@@ -189,7 +195,7 @@ MAIN ELEMENTS
   top: 1.25rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background: var(--sub-color);
+  background: var(--secondary-color);
   color: black;
   font-weight: bold;
 }
@@ -200,7 +206,7 @@ MAIN ELEMENTS
     top: 1.25rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background: var(--sub-color);
+    background: var(--secondary-color);
     color: black;
     font-weight: bold;
   }
@@ -233,17 +239,17 @@ MAIN ELEMENTS
 }
 .mainNav a:hover {
   color: rgb(255, 115, 1);
-  background-color: var(--sub-color);
+  background-color: var(--secondary-color);
 }
 .mainNav a:active {
-  color: var(--sub-color);
+  color: var(--secondery-color);
   background-color: rgb(255, 115, 1);
 }
 
 /*ARTICLE*/
 /*Lines between*/
 article + article {
-  border-top: var(--main-color) solid;
+  border-top: var(--primary-color) solid;
   padding-top: 0;
   _padding-bottom: 0.5rem;
 }
@@ -358,7 +364,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
   margin: 0;
   padding: 1.5rem;
 }
@@ -403,7 +409,7 @@ ol {
 
 /*TO THE TOP-BUTTON FAKE*/
 .topLink:hover {
-  background-color: var(--sub-color);
+  background-color: var(--secondary-color);
 }
 .topLink {
   position: absolute;
@@ -411,7 +417,7 @@ ol {
   top: 0.8125rem;
   padding: 0.125rem;
   border-radius: 0.0625rem;
-  _background: var(--sub-color);
+  _background: var(--secondery-color);
   color: black;
   font-weight: bold;
 }
@@ -434,7 +440,10 @@ ol {
 /*Themes*/
 @media screen and (prefers-color-scheme: dark) {
   body {
-    --main-color: #fffdd0;
-    --sub-color: #f8c19c;
+    --primary-color: #f8c19c;
+    --primary-var-color: #ef6c14;
+    --secondary-color: #247ba0;
+    --error-color: #cf6679;
+    --background-color: #121212;
   }
 }
