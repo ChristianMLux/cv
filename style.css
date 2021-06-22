@@ -28,12 +28,12 @@ html {
   font-size: 16px;
   margin: 0 auto;
   max-width: 80ch;
-  --main-color: #f8c19c;
-  --sub-color: #fffdd0;
-  --hightlight-color: hotpink;
 }
 
 body {
+  --main-color: #f8c19c;
+  --sub-color: #fffdd0;
+  --hightlight-color: hotpink;
   margin: 0;
   background-color: var(--sub-color);
 }
@@ -428,5 +428,13 @@ ol {
   .sectionSubHeading {
     margin-top: 0.55rem;
     margin-left: 0.25rem;
+  }
+}
+
+/*Themes*/
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --main-color: #fffdd0;
+    --sub-color: #f8c19c;
   }
 }
