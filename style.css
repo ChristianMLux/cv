@@ -231,10 +231,10 @@ MAIN ELEMENTS
   padding-right: 0.5rem;
 }
 .mainNav a:link {
-  color: rgb(75, 38, 13);
+  color: var(--basic-font-color);
 }
 .mainNav a:visited {
-  color: rgb(75, 38, 13);
+  color: var(--basic-font-color);
 }
 .mainNav a:hover {
   background-color: var(--primary-var-color);
@@ -443,7 +443,7 @@ ol {
     --secondary-color: #247ba0;
     --error-color: #cf6679;
     --background-color: #121212;
-    --heading-bg-color: #121212b6;
+    --heading-bg-color: #12121260;
     --basic-font-color: white;
   }
 }
