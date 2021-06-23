@@ -262,7 +262,7 @@ article + article {
 
 .sectionDiv {
   _background-color: rgb(255, 253, 208);
-  padding: 2rem;
+  padding: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   -webkit-transition: background-color 2s ease-out;
@@ -446,7 +446,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mainNav a {
     font-size: 16px;
   }
@@ -461,6 +461,38 @@ ol {
   .sectionSubHeading {
     margin-top: 0.55rem;
     margin-left: 0.25rem;
+  }
+
+  main > .articleGrid {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .articleHeader {
+    padding-top: 0.6rem;
+  }
+  .articleExp {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .articleEducation {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .contentWrapper {
+  }
+  .topLink {
+    position: absolute;
+    right: 0.2rem;
+    top: 1rem;
+    padding: 0.125rem;
+    border-radius: 0.0625rem;
+    _background: var(--secondery-color);
+    color: var(--basic-font-color);
+    font-weight: bold;
   }
 }
 
