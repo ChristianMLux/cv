@@ -505,8 +505,13 @@ ol {
     --third-color: #121212;
     --error-color: #cf6679;
     --background-color: #121212;
-    --heading-bg-color: #12121260;
+    --heading-bg-color: #222222;
     --basic-font-color: white;
     --target-color: #451f05;
+  }
+  article + article {
+    border-top: var(--primary-var-color) 0.5px dotted;
+    padding-top: 0;
+    _padding-bottom: 0.5rem;
   }
 }
