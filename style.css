@@ -194,6 +194,7 @@ MAIN ELEMENTS
   padding-bottom: 0;
 }
 .mainNav a {
+  transition: background-color 0.5s;
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
@@ -204,6 +205,10 @@ MAIN ELEMENTS
 .mainNav a:last-child {
   padding-right: 0.5rem;
 }
+.mainNav a:focus {
+  outline-style: dotted;
+  outline-color: var(--primary-var-color);
+}
 .mainNav a:link {
   color: var(--basic-font-color);
 }
@@ -211,6 +216,7 @@ MAIN ELEMENTS
   color: var(--basic-font-color);
 }
 .mainNav a:hover {
+  transition: background-color 0.5s;
   background-color: var(--primary-var-color);
 }
 .mainNav a:active {
