@@ -140,6 +140,7 @@ MAIN ELEMENTS
     rgba(248, 193, 156, 1) 65%
   );
 }
+
 .headerWrapper {
   font-size: 3rem;
 }
@@ -168,10 +169,18 @@ MAIN ELEMENTS
   top: 1.25rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  opacity: 0.5;
   background: var(--primary-var-color);
   color: black;
   font-weight: bold;
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
+.mainHeader:hover .hireMe {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
 @media screen and (max-width: 1068px) {
   .hireMe {
     position: fixed;
